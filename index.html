@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> english </title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom, #f0faff, #ffffff);
+      color: #2c3e50;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .navbar {
+      background-color: #4e7b91ff;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .navbar h1 {
+      font-size: 23px;
+      margin: 0;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #ffe082;
+    }
+
+    header {
+      background: linear-gradient(to left, #28e6ffff, #557989ff);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      animation: slideIn 1s ease-out;
+    }
+
+    header h2 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      background-color: #ff9800;
+      color: white;
+      padding: 14px 28px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #fb8c00;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 32px;
+      color: #d5621aff;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .intro {
+      text-align: center;
+    }
+
+    .intro img {
+      width: 180px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      color: #3f51b5;
+      font-size: 22px;
+    }
+
+    footer {
+      background: #263238;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      margin-top: 60px;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes slideIn {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<div class="navbar">
+  <h1> اللغة الانكليزية</h1>
+  <div>
+    <a href="st_login.PHP">الدروس</a>
+    <a href="contact.html">اتصل بنا</a>
+ 
+  </div>
+</div>
+
+<header>
+  <h2>ابدأ رحلتك في تعلم الإنجليزية</h2>
+  <p>دورات تفاعلية، شاملة، ومناسبة لجميع المستويات</p>
+  <a href="register.html" class="btn">سجل الآن</a>
+</header>
+
+<section class="intro fade-in">
+  <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="معلم لغة" />
+  <h2>من نحن</h2>
+  <p>نحن أكاديمية تعليمية متخصصة في تقديم محتوى تفاعلي لتعلم اللغة الإنجليزية بطرق حديثة وفعالة.</p>
+</section>
+
+<section id="lessons" class="fade-in">
+  <h2>المناهج خاصةفي الصف الثالث المتوسط والسادس الاعدادي </h2>
+  <div class="cards">
+    <div class="card">
+      <h3> متابعة واختبارات </h3>
+      <p>اختبارات يومية باسئلة منهجية واثرائيات ووزاريات .</p>
+    </div>
+    <div class="card">
+      <h3>قواعد مبسطة</h3>
+      <p>تعلم القواعد بأسلوب واضح وميسر.</p>
+    </div>
+    <div class="card">
+      <h3>  المنهج </h3>
+      <p>شرح المنهج بصورة مبسط .</p>
+    </div>
+   
+</section>
+
+<footer>
+  جميع الحقوق محفوظة © 2025 - أكاديمية تعلم الإنجليزية
+</footer>
+
+<script>
+  // Scroll animation
+  const faders = document.querySelectorAll('.fade-in');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  faders.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
+
+
